@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
-        <Button>howdy!</Button>
-        <Button>howdy!</Button>
-    </StackPanel>
+        Title="MainWindow" Height="198" Width="303">
+    <Window.Resources>
+        <SolidColorBrush x:Key="bg" Color="Red"/>
+    </Window.Resources>
+    
+    <WrapPanel>
+        <Button Background="{StaticResource bg}" Click="Howdyclicked">howdy!</Button>
+        <Button Height="51">howdy!</Button>
+        <TextBox x:Name="_text1">an editable text box</TextBox>
+        <Slider Width="75" Minimum="0" Maximum="100" Value="50"/>
+    </WrapPanel>
 
 </Window>

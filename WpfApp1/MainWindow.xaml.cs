@@ -24,5 +24,9 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        void Howdyclicked(object sender,RoutedEventArgs e)
+        {
+            _text1.Text = "hello from c#";
+        }
     }
 }
